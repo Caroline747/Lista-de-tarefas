@@ -8,7 +8,7 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 const saveTodo = (text) => {
 
     const todo = document.createElement("div");
-    todo.classList.add("todo");
+    todo.classList.add(todo);
 
     const todoTitle = document.createElement("h3");
     todoTitle.innerText = text;
@@ -39,5 +39,5 @@ todoForm.addEventListener("submit", (e) => {
 
     if (inputValue) {
         saveTodo
-    }
-})
+    };
+});
